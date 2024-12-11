@@ -1,0 +1,8 @@
+{
+  "name": "mymusic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "eb10d7b4"
+}

@@ -1,0 +1,66 @@
+*{
+  font-weight: bold;
+}
+
+ion-item{
+  ion-thumbnail{
+    img{
+      border-radius: 10px;
+    }
+  }
+  ion-label{
+    h2,
+    p{
+      font-weight: bold;
+    }
+  }
+}
+
+#miniPlayer{
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  transition: 0.5s;
+  // hide by default by setting bottom value in negative
+  bottom: -100px;
+  ion-progress-bar{
+    z-index: 10;
+  }
+}
+
+#fullPlayer{
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: var(--ion-background-color,#ffffff);
+  z-index: 20;
+  // hide by default by setting bottom value in negative
+  bottom: -1000px;
+  // current song image
+  text-align: center; /* Center text within the div */
+  #currImg{
+    background: var(--ion-background-color,#ffffff);
+    margin-top: 30px; /* Space above the image */
+    width: 200px; /* Width of the image */
+    height: 200px; /* Height of the image */
+    border-radius: 10px; /* Rounded corners */
+    display: block; /* Make it a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
+  p{
+    color: var(--ion-text-color);
+    margin: 0;
+  }
+  ion-text{
+    font-size: medium;
+  }
+}
+
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Optional: Add space between buttons */
+  margin: 20px 0; /* Optional: Add some vertical spacing */
+}
