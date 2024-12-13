@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Storage } from '@capacitor/Storage';
+import { Storage } from '@capacitor/storage';
 
 @Injectable({
   providedIn: 'root',
